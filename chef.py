@@ -9,10 +9,10 @@ from .khan import get_khan_topic_tree
 
 LICENSE_MAPPING = {
     "CC BY": licenses.CC_BYLicense(copyright_holder="Khan Academy"),
-    "CC BY-NC": licenses.CC_BY_NCLicense,
-    "CC BY-NC-ND": licenses.CC_BY_NC_NDLicense,
-    "CC BY-NC-SA (KA default)": licenses.CC_BY_NC_SALicense,
-    "CC BY-SA": licenses.CC_BY_SALicense,
+    "CC BY-NC": licenses.CC_BY_NCLicense(copyright_holder="Khan Academy"),
+    "CC BY-NC-ND": licenses.CC_BY_NC_NDLicense(copyright_holder="Khan Academy"),
+    "CC BY-NC-SA (KA default)": licenses.CC_BY_NC_SALicense(copyright_holder="Khan Academy"),
+    "CC BY-SA": licenses.CC_BY_SALicense(copyright_holder="Khan Academy"),
     "Non-commercial/non-Creative Commons (College Board)": licenses.SpecialPermissionsLicense(copyright_holder="Khan Academy", description="Non-commercial/non-Creative Commons (College Board)"),
     # "Standard Youtube": licenses.ALL_RIGHTS_RESERVED,
 }
